@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kevin Urbain</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="cv.html" class="menu-item">Mon CV</a>
+            <a href="professional-retraining.html" class="menu-item">Mon Projet de Reconversion</a>
+            <a href="contact.html" class="menu-item active">Contact</a>
+        </nav>
+    </div>
+    <div class="box-container">
+        <div class="container">
+            <h1>Mes Coordonnées</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user contact-icon"></i>
+                    <div class="contact-text">
+                        <div class="contact-label">Nom</div>
+                        <div>Kevin Urbain</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <div class="contact-label">Email</div>
+                        <div><a href="mailto:k.urbain.personnel@gmail.com">k.urbain.personnel@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-text">
+                        <div class="contact-label">Téléphone</div>
+                        <div>0497/83.04.73</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <div class="contact-label">Adresse</div>
+                        <div>Rue Brasseur 10, 7080 La Bouverie, Belgique</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Add hover effect to contact items
+        const contactItems = document.querySelectorAll('.contact-item');
+        contactItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.backgroundColor = '#e9ecef';
+                item.style.transform = 'translateY(-5px)';
+                item.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.backgroundColor = '#f8f9fa';
+                item.style.transform = 'translateY(0)';
+                item.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
