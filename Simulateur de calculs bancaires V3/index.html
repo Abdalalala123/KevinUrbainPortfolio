@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini Simulateur Bancaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="title">Simulateur Bancaire</h1>
+
+        <div class="account-info">
+            <h2 class="balance">Solde: <span id="solde">0.00 €</span></h2>
+        </div>
+
+        <div>
+            <h2>Nouvelle opération</h2>
+            <input id="description" placeholder="Description">
+            <input id="montant" type="number" step="0.01" placeholder="Montant">
+            <select id="type">
+                <option value="credit">Crédit</option>
+                <option value="debit">Débit</option>
+            </select>
+            <button id="ajouter">Ajouter</button>
+        </div>
+
+        <div>
+            <h2>Opérations</h2>
+            <ul id="liste-operations"></ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
