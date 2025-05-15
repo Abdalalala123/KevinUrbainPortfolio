@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <head>
@@ -105,4 +106,113 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet de Reconversion - Kevin Urbain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>MON PROJET DE RECONVERSION</h1>
+        <p>Mon parcours et mon désir de reconversion</p>
+    </header>
+
+    <div class="menu-container">
+        <nav class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="cv.html" class="menu-item">Mon CV</a>
+            <a href="projet-retraining.html" class="menu-item active">Mon Projet de Reconversion</a>
+            <a href="contact.html" class="menu-item">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>Attirés par les sciences !</h2>
+                    <p>J'ai toujours été attiré par les sciences. Plus jeune je rêvais même d'aller dans l'espace.
+                        J'étais curieux de la vie et des phénomènes physiques qui m'entourait. Je voulais toujours à
+                        tout prix savoir comment quelque chose fonctionnait. J'ai également été très vite attiré par les
+                        ordinateurs. A l'époque, j'ai d'ailleurs créé un site très simpliste d'organisation de tournois
+                        sur le jeu vidéo Call Of Duty grâce aux ressources du célèbre SiteDuZéro.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>Réalité de la vie</h2>
+                    <p>J'ai commencé un bachelier en sciences chimiques, mais ce
+                        domaine ne me correspondait plus. À ce moment-là, je me suis senti perdu dans mes choix
+                        d'études: pression sociale et familiale, peurs et
+                        incertitudes. Cependant, il était impératif de trouver un emploi rapidement pour subvenir à mes
+                        besoins et envisager l'achat d'une maison, au détriment de mes aspirations professionnelles.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>Mes réussites</h2>
+                    <p>J'ai effectué un bachelier en éducation spécialisée. Pendant ces trois années d'études, j'ai pu
+                        travailler et gagner de l'argent. Me voilà donc éducateur et propriétaire !</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>Un sentiment d'inachevé</h2>
+                    <p>Malgré les expériences accumulées, je constate que mes aspirations et ma motivation ne s'alignent
+                        plus avec cette profession. Cette réalisation crée un malaise en moi, laissant
+                        l'impression d'un vide intérieur, un besoin de redéfinir mon parcours professionnel sommeille en
+                        moi. J'effectue alors un test d'orientation professionnelle auprès de la SIEP de Mons. Les
+                        résultats sont unanimes: les métiers de l'IT correspondent à mon profil.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>La décision</h2>
+                    <p>En 2023, j'essaie de trouver une occupation pour me vider l'esprit. Je réapprends les bases de
+                        l'HTML apprises lors de mon adolescence et je découvre les bases de CSS. Je
+                        m'amuse alors à créer divers sites web. J'apprends les bases du Javascript dont la manipulation
+                        du DOM. Un ami me fait découvrir le langage C# que j'apprécie fortement, je crée des petits
+                        programmes: quizz, générateur de mots de passe, etc. Je m'inscris alors sur
+                        Udemy et Dyma pour
+                        en apprendre davantage.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>Aujourd'hui</h2>
+                    <p>Je continue à apprendre mais je souhaite entamer une formation qualifiante afin de me lancer dans
+                        le monde de l'IT.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < window.innerHeight - 100) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.5s, transform 0.5s';
+        });
+    </script>
+</body>
+
+>>>>>>> 459f00b (Modification index.html)
 </html>

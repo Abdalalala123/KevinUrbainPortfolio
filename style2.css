@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body,
 html {
 	margin: 0;
@@ -141,3 +142,148 @@ h1 {
 	border-radius: 6px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+=======
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+	background-color: #f8f9fa;
+	color: #212529;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #3a0ca3;
+	color: white;
+	text-align: center;
+	padding: 4rem 0;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+h1 {
+	margin: 0;
+	font-size: 3.5rem;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 4rem 2rem;
+}
+
+.menu-container {
+	overflow-x: auto;
+	white-space: nowrap;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 1rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.menu {
+	display: inline-block;
+	padding: 0 2rem;
+}
+
+.menu-item {
+	display: inline-block;
+	color: #3a0ca3;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	margin: 0 0.5rem;
+	border-radius: 25px;
+	transition: all 0.3s ease;
+	font-weight: 500;
+}
+
+.menu-item:hover,
+.menu-item.active {
+	background-color: #3a0ca3;
+	color: white;
+}
+
+.menu-container::-webkit-scrollbar {
+	display: none;
+}
+
+.menu-container {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: #3a0ca3;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.timeline-item {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.left {
+	left: -7%;
+}
+
+.right {
+	left: 47%;
+}
+
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid #3a0ca3;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #3a0ca3;
+}
+
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid #3a0ca3;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #3a0ca3 transparent transparent;
+}
+
+.right::after {
+	left: -16px;
+}
+
+.content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+>>>>>>> 459f00b (Modification index.html)
