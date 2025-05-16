@@ -4,60 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Word Game | Kevin Urbain</title>
+    <link rel="stylesheet" href="../../Style/style-unified.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>KEVIN URBAIN</h1>
+        <p>Ma présentation | Bringing Ideas to Life...</p>
+        <p>"Le succès n'est pas final, l'échec n'est pas fatal : c'est le courage de continuer qui compte." - Winston
+            Churchill</p>
+    </header>
+
+    <div class="menu-container">
+        <nav class="menu">
+            <a href="../../index.html" class="menu-item">Home</a>
+            <a href="../../cv.html" class="menu-item">Mon CV</a>
+            <a href="../../professional-retraining.html" class="menu-item">Mon Projet de Reconversion</a>
+            <a href="../../tools.html" class="menu-item">Mes Outils</a>
+            <a href="../../contact.html" class="menu-item">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main>
+            <h1>QuickWord</h1>
+            <section id="game-container">
+                <div id="instructions">
+                    <p>Tapez les mots ci-dessous aussi vite que possible ! Appuyez sur Espace après chaque mot.</p>
+                </div>
+
+                <div id="word-display-area"></div>
+
+                <input type="text" id="typing-input" placeholder="Commencez à taper ici..." autocomplete="off"
+                    autocorrect="off" autocapitalize="off" spellcheck="false">
+
+                <div id="game-info">
+                    <div class="info-item">
+                        <p>Temps: <span id="time-left">60</span>s</p>
+                    </div>
+                    <div class="info-item">
+                        <p>MPM: <span id="wpm-score">0</span></p>
+                    </div>
+                    <div class="info-item">
+                        <p>Précision: <span id="accuracy-score">100</span>%</p>
+                    </div>
+                    <div class="info-item">
+                        <p>
+                            Mots validés: <span id="correct-words">0</span>
+                        </p>
+                    </div>
+                </div>
+
+                <button id="start-reset-button">Démarrer</button>
+            </section>
+
+            <section id="results-summary" class="hidden">
+                <h2>Résultats</h2>
+                <p>Votre vitesse de frappe : <span id="final-wpm">0</span> MPM.</p>
+                <p>Précision : <span id="final-accuracy">0</span>%.</p>
+                <p>Mots corrects : <span id="final-correct-words">0</span></p>
+                <p>Mots incorrects : <span id="final-incorrect-words">0</span></p>
+                <button id="play-again-button">Rejouer</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 QuickWord</p>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickWord - Test de Vitesse de Frappe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>QuickWord</h1>
+        
     </header>
 
-    <main>
-        <section id="game-container">
-            <div id="instructions">
-                <p>Tapez les mots ci-dessous aussi vite que possible ! Appuyez sur Espace après chaque mot.</p>
-            </div>
-
-            <div id="word-display-area"></div>
-
-            <input type="text" id="typing-input" placeholder="Commencez à taper ici..." autocomplete="off"
-                autocorrect="off" autocapitalize="off" spellcheck="false">
-
-            <div id="game-info">
-                <div class="info-item">
-                    <p>Temps: <span id="time-left">60</span>s</p>
-                </div>
-                <div class="info-item">
-                    <p>MPM: <span id="wpm-score">0</span></p>
-                </div>
-                <div class="info-item">
-                    <p>Précision: <span id="accuracy-score">100</span>%</p>
-                </div>
-                <div class="info-item">
-                    <p>
-                        Mots validés: <span id="correct-words">0</span>
-                    </p>
-                </div>
-            </div>
-
-            <button id="start-reset-button">Démarrer</button>
-        </section>
-
-        <section id="results-summary" class="hidden">
-            <h2>Résultats</h2>
-            <p>Votre vitesse de frappe : <span id="final-wpm">0</span> MPM.</p>
-            <p>Précision : <span id="final-accuracy">0</span>%.</p>
-            <p>Mots corrects : <span id="final-correct-words">0</span></p>
-            <p>Mots incorrects : <span id="final-incorrect-words">0</span></p>
-            <button id="play-again-button">Rejouer</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 QuickWord</p>
-    </footer>
-    <script src="script.js"></script>
+    
 </body>
 
-</html>
+</html> -->
